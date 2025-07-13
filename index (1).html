@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Al Jazira - Services Catalog</title>
+    <link rel="stylesheet" href="style (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <div class="sidebar__logo">
+                    <img src="image.png" alt="Bank Al Jazira" class="sidebar__logo-img">
+                </div>
+            </div>
+            
+            <div class="sidebar__user">
+                <div class="sidebar__user-avatar">
+                    <img src="Picture.png" alt="Mike Ahamad" class="sidebar__user-img">
+                </div>
+                <div class="sidebar__user-info">
+                    <h3 class="sidebar__user-name">Mike Ahamad</h3>
+                    <p class="sidebar__user-role">System Admin</p>
+                </div>
+            </div>
+            
+            <nav class="sidebar__nav">
+                <ul class="sidebar__nav-list">
+                    <li class="sidebar__nav-item sidebar__nav-item--active">
+                        <a href="#" class="sidebar__nav-link">
+                            <img src="Product Documents.png" class="fixerrr sidebar__nav-icon">
+                            <span class="sidebar__nav-text">Services Catalog</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <a href="#" class="sidebar__nav-link">
+                            <img src="People.png" class="fas fa-users sidebar__nav-icon">
+                            <span class="sidebar__nav-text">Users</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <a href="#" class="sidebar__nav-link">
+                            <img src="Data Protection.png" class="fas fa-shield-alt sidebar__nav-icon">
+                            <span class="sidebar__nav-text">Roles & Permissions</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <a href="#" class="sidebar__nav-link">
+                            <img src="Services.png" class="fas fa-cog sidebar__nav-icon">
+                            <span class="sidebar__nav-text">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Header -->
+            <header class="header">
+                <div class="header__user-actions">
+                    <button class="mobile-toggle" onclick="toggleSidebar()">
+                    ...
+                    </button>
+                    <button class="header__notification">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                    <button class="header__language">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                    <div class="header__user-avatar">
+                        <img src="Picture.png" alt="User" class="header__user-img">
+                    </div>
+                </div>
+            </header>
+            <div class="header__content">
+                <div class="header__icon">
+                        <img src="Product Documents.png" alt="icon1" class="header__icon-img">
+                    </div>
+                        <div>
+                        <h1 class="header__title">Services Catalog</h1>
+                        <p class="header__subtitle">Use this page to manage your service catalogs , the fast and easy way.</p>
+                        </div>
+                      </div>
+            <div class="header__right">
+                    <button class="header__btn">Add Service Catalog</button>
+            </div>
+            <!-- Search Section -->
+            <section class="search">
+                <div class="search__container">
+                    <div class="search__input-wrapper">
+                        <input type="text" class="search__input" placeholder="Search by Service catalog name ...">
+                        <button class="search__btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Section -->
+            <section class="content">
+                <div class="content__header">
+                    <div class="content__info">
+                        <span class="content__showing">Showing: <strong>100 Services</strong></span>
+                    </div>
+                    <div class="content__view-toggle">
+                        <button class="content__view-btn content__view-btn--active">
+                            <img src="Table rows.png"></i>
+                        </button>
+                        <button class="content__view-btn">
+                            <img src="Group.png"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service Cards Grid -->
+                <div class="services">
+                    <div class="services__grid">
+                        <!-- Service Card 1 -->
+                        <div class="service-card" id="uni">
+                            <div class="service-card__header">
+                                <div class="service-card__icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 2 -->
+                        <div class="service-card" id="desktop">
+                            <div class="service-card__header">
+                                <div class="service-card__icon service-card__icon--secondary">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 3 -->
+                        <div class="service-card" id="print">
+                            <div class="service-card__header">
+                                <div class="service-card__icon service-card__icon--dark">
+                                    <i class="fas fa-print"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 4 -->
+                        <div class="service-card" id="uni">
+                            <div class="service-card__header">
+                                <div class="service-card__icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 5 -->
+                        <div class="service-card" id="print">
+                            <div class="service-card__header">
+                                <div class="service-card__icon service-card__icon--dark">
+                                    <i class="fas fa-print"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 6 -->
+                        <div class="service-card" id="uni">
+                            <div class="service-card__header">
+                                <div class="service-card__icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 7 -->
+                        <div class="service-card" id="desktop">
+                            <div class="service-card__header">
+                                <div class="service-card__icon service-card__icon--secondary">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 8 -->
+                        <div class="service-card" id="print">
+                            <div class="service-card__header">
+                                <div class="service-card__icon service-card__icon--dark">
+                                    <i class="fas fa-print"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 9 -->
+                        <div class="service-card last" id="desktop">
+                            <div class="service-card__header">
+                                <div class="service-card__icon service-card__icon--secondary">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 10 -->
+                        <div class="service-card last" id="print">
+                            <div class="service-card__header">
+                                <div class="service-card__icon service-card__icon--dark">
+                                    <i class="fas fa-print"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 11 -->
+                        <div class="service-card last" id="uni">
+                            <div class="service-card__header">
+                                <div class="service-card__icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 12 -->
+                        <div class="service-card last" id="desktop">
+                            <div class="service-card__header">
+                                <div class="service-card__icon service-card__icon--secondary">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <button class="service-card__menu">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Service Catalog</h3>
+                                <p class="service-card__category">Category Name</p>
+                                <p class="service-card__description">Lorem ipsum dolor sit amet consectetur. Ultrices malesuada ultrices commodo blandit nec egestas sodales eget. Ut interdum augue sed viverra amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <section class="pagination">
+                <div class="pagination__container">
+                    <button class="pagination__btn pagination__btn--prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="pagination__btn pagination__btn--active">1</button>
+                    <button class="pagination__btn">2</button>
+                    <button class="pagination__btn">3</button>
+                    <button class="pagination__btn pagination__btn--next yameen">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script>
+function toggleSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.classList.toggle("sidebar--visible");
+}
+</script>
+
+</html>
+
