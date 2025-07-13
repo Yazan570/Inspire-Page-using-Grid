@@ -21,5 +21,5 @@ I implemented it in the layout of the service catalogue cards.
 
 
 ### What did I learn?
-Grid is the most advanced layout property, so leraning grid helped me build complex layouts in no time. It controls more than one element in a container in 2 dimensions!
+Grid is the most advanced layout property, so learning grid helped me build complex layouts in no time. It controls more than one element in a container in 2 dimensions!
 
